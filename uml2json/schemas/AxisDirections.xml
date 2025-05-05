@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Code list values for ISO 19111 axis directions.
+-->
+<gc:CodeList xmlns:gc           = "http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi          = "http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation = "http://docs.oasis-open.org/codelist/ns/genericode/1.0/
+                                   https://docs.oasis-open.org/codelist/genericode/v1.0/os/xsd/genericode.xsd">
+
+  <Identification>
+   <!-- Name as used in the UML model. -->
+   <ShortName>AxisDirection</ShortName>
+
+   <!-- Human-readable names. -->
+   <LongName xml:lang="en">Axis directions</LongName>
+   <LongName xml:lang="fr">Directions des axes</LongName>
+
+   <!-- From OGC 07-092r1 — Definition identifier URNs in OGC namespace. -->
+   <Version>TODO</Version>
+   <CanonicalUri>urn:ogc:def:axisDirection:ISO</CanonicalUri>
+   <CanonicalVersionUri>urn:ogc:def:axisDirection:ISO:TODO</CanonicalVersionUri>
+
+   <!-- Location of this file on OGC server. -->
+   <LocationUri>https://www.opengis.net/def/axisDirection/ISO/0/AxisDirections.xml</LocationUri>
+   <AlternateFormatLocationUri MimeType="application/json">https://www.opengis.net/def/axisDirection/ISO/0/AxisDirections.json</AlternateFormatLocationUri>
+   <Agency>
+     <ShortName>OGC</ShortName>
+     <LongName xml:lang="en">Open Geospatial Consortium</LongName>
+   </Agency>
+  </Identification>
+
+  <ColumnSet>
+    <Column Id="code" Use="required">
+      <ShortName>code</ShortName>
+      <LongName xml:lang="en">Code</LongName>
+      <LongName xml:lang="fr">Code</LongName>
+      <Data Type="normalizedString"/>
+    </Column>
+    <Column Id="name" Use="required">
+      <ShortName>name</ShortName>
+      <LongName xml:lang="en">Name</LongName>
+      <LongName xml:lang="fr">Nom</LongName>
+      <Data Type="string"/>
+    </Column>
+    <Column Id="description" Use="optional">
+      <ShortName>description</ShortName>
+      <LongName xml:lang="en">Description</LongName>
+      <LongName xml:lang="fr">Description</LongName>
+      <Data Type="string"/>
+    </Column>
+
+    <!-- Identify which columns will be used for identifying a code list value. -->
+    <Key Id="codeKey">
+      <ShortName>CodeKey</ShortName>
+      <ColumnRef Ref="code"/>
+    </Key>
+  </ColumnSet>
+
+  <!-- Definitions of code list values. -->
+  <SimpleCodeList>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>north</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>North</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is north.
+          In a geographic or projected CRS, north is defined through the geodetic reference frame.
+          In an engineering CRS, north may be defined with respect to an engineering object
+          rather than a geographical direction.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>northNorthEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>North-north-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately north-north-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>northEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>North-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately north-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>eastNorthEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>East-north-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately east-north-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>east</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>East</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is π/2 radians clockwise from north.
+          This is usually used for grid X coordinates and for longitude.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>eastSouthEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>East-south-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately east-south-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>southEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>South-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately south-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>southSouthEast</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>South-south-east</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately south-south-east.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>south</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>South</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is π radians clockwise from north.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>southSouthWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>South-south-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately south-south-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>southWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>South-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately south-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>westSouthWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>West-south-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately west-south-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>west</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>West</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is 3π/2 radians clockwise from north.
+          This is usually used for Grid X coordinates and Longitude.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>westNorthWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>West-north-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately west-north-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>northWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>North-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately north-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>northNorthWest</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>North-north-west</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is approximately north-north-west.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>up</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Up</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is up relative to gravity.
+          This is used for vertical coordinate systems.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>down</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Down</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is down relative to gravity.
+          This is used for vertical coordinate systems.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>geocentricX</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Geocentric X</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is toward geocentric X.
+          This is the direction in the equatorial plane from the center of the modeled planet
+          towards the intersection of the equator with the prime meridian.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>geocentricY</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Geocentric Y</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is toward geocentric Y.
+          This is the direction in the equatorial plane from the center of the modeled planet
+          towards the intersection of the equator and the meridian π/2 radians eastwards from the prime meridian.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>geocentricZ</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Geocentric Z</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is toward geocentric Z.
+          This is the direction from the center of the modeled planet
+          parallel to its rotation axis and towards its north pole.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>columnPositive</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Column positive</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards higher pixel column.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>columnNegative</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>column negative</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards lower pixel column.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>rowPositive</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Row positive</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards higher pixel row.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>rowNegative</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Row negative</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards lower pixel row.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>displayRight</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Display right</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is right in display.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>displayLeft</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Display left</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is left in display.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>displayUp</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Display up</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards top of approximately vertical display surface.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>displayDown</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Display down</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards bottom of approximately vertical display surface.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>forward</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Forward</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is forward.
+          For an observer at the center of the object this will be towards its front, bow or nose.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>aft</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Aft</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is aft.
+          For an observer at the center of the object this will be towards its back, stern or tail.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>port</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Port</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is port.
+          For an observer looking forward from the center of the object this will be towards its left.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>starboard</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Starboard</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is starboard.
+          For an observer looking forward from the center of the object this will be towards its right.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>clockwise</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Clockwise</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is clockwise from a specified direction.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>counterClockwise</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Counter clockwise</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is counter clockwise from a specified direction.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>towards</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Towards</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards the object.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>awayFrom</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Away from</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is away from the object.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>future</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Future</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards the future.
+          This is used for temporal coordinate systems.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>past</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Past</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is towards the past
+          This is used for temporal coordinate systems.
+        </SimpleValue>
+      </Value>
+    </Row>
+
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>unspecified</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Unspecified</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>
+          Axis positive direction is unspecified.
+        </SimpleValue>
+      </Value>
+    </Row>
+  </SimpleCodeList>
+</gc:CodeList>
