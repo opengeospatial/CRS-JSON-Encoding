@@ -1010,23 +1010,10 @@
       "properties": {
         "entityType": {
           "type": "string"
-        },
-        "parameter": {
-          "description": "parameter or parameter group which has this value or value group",
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "$ref": "#/$defs/GeneralOperationParameter"
-            }
-          ]
         }
       },
       "required": [
-        "entityType",
-        "parameter"
+        "entityType"
       ]
     },
     "GeodeticCRS": {
