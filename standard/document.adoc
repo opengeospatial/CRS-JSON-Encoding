@@ -1,4 +1,4 @@
-= OGC (add title text)
+= OGC CRS JSON Encoding
 :doctype: standard
 :encoding: utf-8
 :lang: en
