@@ -35,9 +35,10 @@ ISO shall not be held responsible for identifying any or all such patent rights.
 [abstract]
 == Abstract
 
-<Insert Abstract Text here>
-
-
+This Standard defines the structure and content of JSON documents describing coordinate reference systems (CRSs)
+and coordinate operations between coordinate reference systems.
+It does not prescribe how implementations should read or write these documents.
+This Standard follows the provisions of ISO 19111:2019 including its amendments 1 and 2.
 
 == Preface
 
@@ -48,18 +49,7 @@ Insert Preface Text here. Give OGC specific commentary: describe the technical c
 
 == Security considerations
 
-//If no security considerations have been made for this Standard, use the following text.
-
 No security considerations have been made for this Standard.
-
-////
-If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
-“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
-Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
-NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
-////
-
-
 
 == Submitters
 
