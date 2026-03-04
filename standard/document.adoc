@@ -1,4 +1,4 @@
-= CRS JSON Encoding
+= JSON representation of coordinate reference systems
 :doctype: standard
 :encoding: utf-8
 :lang: en
@@ -10,11 +10,11 @@
 :received-date: 2029-03-30
 :issued-date: 2029-03-30
 :published-date: 2029-03-30
-:fullname: Editor One
-:fullname_2: Editor Two
+:fullname: Martin Desruisseaux
+:fullname_2: Keith Ryden
 :docsubtype: Interface
-:keywords: ogcdoc, OGC document, API, openapi, html
-:submitting-organizations: Organization One; Organization Two
+:keywords: ogcdoc, OGC document, coordinate reference systems, CRS, JSON
+:submitting-organizations: ESRI; Geomatys
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
 :local-cache-only:
