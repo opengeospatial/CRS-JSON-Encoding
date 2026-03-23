@@ -1,17 +1,166 @@
 == Terms and definitions
 
+////
+NOTE: commented-out because seems to duplicate automatically-generated text
 This document uses the terms defined in OGC Policy Directive 49, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
 
 For the purposes of this document, the following additional terms and definitions apply.
+////
 
-=== example term
 
-term used for exemplary purposes
+=== affine coordinate system
+
+coordinate system in Euclidean space with straight axes that are not necessarily mutually perpendicular
 
 [.source]
-<<ISO19101-1>>
+<<ISO19111>>
 
-NOTE: An example note.
+
+=== bearing
+
+horizontal angle at a point relative to a specified direction
+
+NOTE: The direction is usually specified to be north.
+In some communities the term bearing refers specifically to grid north and directions relative to true north are then termed ‘azimuth’;
+in other communities a bearing refers specifically to true north. In this document bearing is used for any specified reference direction.
+The angle may be reckoned positive clockwise or positive counter-clockwise depending upon the application.
+
+[.source]
+<<ISO19111>>
+
+
+=== Cartesian coordinate system
+
+coordinate system in Euclidean space which gives the position of points relative
+to _n_ mutually perpendicular straight axes all having the same unit of measure
+
+NOTE: _n_ is 2 or 3 for the purposes of this document.
+
+NOTE: A Cartesian coordinate system is a specialisation of an affine coordinate system.
+
+[.source]
+<<ISO19111>>
+
+
+=== compound coordinate reference system
+
+coordinate reference system using at least two independent coordinate reference systems
+
+NOTE: Coordinate reference systems are independent of each other if coordinate values
+in one cannot be converted or transformed into coordinate values in the other.
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate conversion
+
+coordinate operation that changes coordinates in a source coordinate reference system to coordinates in a
+target coordinate reference system in which both coordinate reference systems are based on the same datum
+
+NOTE: A coordinate conversion uses parameters which have specified values.
 
 [example]
-Here's an example of an example term.
+A mapping of ellipsoidal coordinates to Cartesian coordinates using a map projection.
+
+[example]
+Change of units such as from radians to degrees or from feet to metres.
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate epoch
+
+epoch to which coordinates are referenced to a dynamic coordinate reference system
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate operation
+
+process using a mathematical model, based on a one-to-one relationship, that changes coordinates in a source
+coordinate reference system to coordinates in a target coordinate reference system, or that changes coordinates
+at a source coordinate epoch to coordinates at a target coordinate epoch within the same coordinate reference system
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate reference system
+
+coordinate system that is related to an object by a datum
+
+NOTE: Geodetic and vertical datums are referred to as reference frames.
+
+NOTE: For geodetic and vertical reference frames, the object will be the Earth.
+In planetary applications, geodetic and vertical reference frames may be applied to other celestial bodies.
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate system
+
+set of mathematical rules for specifying how coordinates are to be assigned to points
+
+[.source]
+<<ISO19111>>
+
+
+=== coordinate transformation
+
+coordinate operation that changes coordinates in a source coordinate reference system to coordinates in a target
+coordinate reference system in which the source and target coordinate reference systems are based on different datums
+
+NOTE: A coordinate transformation uses parameters which are derived empirically.
+Any error in those coordinates will be embedded in the coordinate transformation
+and when the coordinate transformation is applied the embedded errors are transmitted to output coordinates.
+
+NOTE: A coordinate transformation is colloquially sometimes referred to as a 'datum transformation'.
+This is erroneous. A coordinate transformation changes coordinate values. It does not change the definition of the datum.
+In this document coordinates are referenced to a coordinate reference system.
+A coordinate transformation operates between two coordinate reference systems, not between two datums.
+
+[.source]
+<<ISO19111>>
+
+
+=== cylindrical coordinate system
+
+three-dimensional coordinate system in Euclidean space in which position
+is specified by two linear coordinates and one angular coordinate
+
+[.source]
+<<ISO19111>>
+
+
+=== datum, reference frame
+parameter or set of parameters that realize the position of the origin,
+the scale, and the orientation of a coordinate system
+
+[.source]
+<<ISO19111>>
+
+
+=== datum ensemble
+
+group of multiple realizations of the same terrestrial or vertical reference system that,
+for approximate spatial referencing purposes, are not significantly different
+
+[example]
+“WGS 84” as an undifferentiated group of realizations including WGS 84 (TRANSIT),
+WGS 84 (G730), WGS 84 (G873), WGS 84 (G1150), WGS 84 (G1674) and WGS 84 (G1762).
+At the surface of the Earth these have changed on average by 0.7 m between the TRANSIT and G730 realizations,
+a further 0.2 m between G730 and G873, 0.06 m between G873 and G1150, 0.2 m between G1150 and G1674
+and 0.02 m between G1674 and G1762.
+
+NOTE: Datasets referenced to the different realizations within a datum ensemble
+may be merged without coordinate transformation.
+
+NOTE: ‘Approximate’ is for users to define but typically is in the order of under
+1 decimetre but may be up to 2 metres.
+
+[.source]
+<<ISO19111>>
