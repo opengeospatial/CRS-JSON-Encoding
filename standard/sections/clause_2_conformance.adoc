@@ -1,3 +1,4 @@
+[[conformance]]
 == Conformance
 This standard defines XXXX.
 

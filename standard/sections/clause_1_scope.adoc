@@ -1,6 +1,6 @@
+[[scope]]
 == Scope
-[NOTE]
-====
+
 This document defines the structure and content of a JSON implementation of the
 abstract model for coordinate reference systems described in ISO 19111:2019.
 The JSON schema defines all ISO 19111 types of coordinate reference systems and coordinate operations
@@ -8,4 +8,3 @@ in a self-contained form that is readable by machines and by humans.
 The JSON document provides a means for humans and machines to correctly and
 unambiguously interpret and utilise a coordinate reference system definition
 with look-ups or cross references to define coordinate operation mathematics.
-====

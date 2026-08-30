@@ -1,3 +1,4 @@
+[[revisions]]
 [appendix]
 == Revision History
 
