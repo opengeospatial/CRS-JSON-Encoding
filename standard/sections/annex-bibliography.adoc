@@ -2,21 +2,8 @@
 [bibliography]
 == Bibliography
 
-[NOTE]
-.Example Bibliography (Delete this note).
-===============================================
-The TC has approved Springer LNCS as the official document citation type.
+* [[[IOGP,EPSG]]], IOGP: _The EPSG Geodetic Parameter Dataset._ https://epsg.org/
 
-Springer LNCS is widely used in technical and computer science journals and other publications
+* [[[OGC07-092,OGC 07-092r1]]], Arliss Whiteside: OGC 07-092r1, _Definition identifier URNs in OGC namespace_ (2007)
 
-* For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
-
-– Actual References:
-
-[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
-
-[n] Web: Author Surname, A.: Title, http://Website-Url
-
-===============================================
-
-* [[[OGC2015,OGCTB12]]], _OGC: OGC Testbed 12 Annex B: Architecture_ (2015).
+* [[[UCUM,UCUM]]], UCUM: _The Unified Code for Units of Measure._ https://unitsofmeasure.org/

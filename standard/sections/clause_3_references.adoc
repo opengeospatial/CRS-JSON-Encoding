@@ -10,4 +10,10 @@ For undated references, the latest edition of the normative document referred to
 
 * [[[ISO19111,ISO 19111:2019]]], ISO Geographic information — Referencing by coordinates
 
+* [[[ISO19115-4,ISO 19115-4]]], ISO Geographic information — Metadata part 4: JSON schema implementation of metadata fundamentals
+
+* [[[OGC24-017,OGC 24-017r1]]], Johannes Echterhoff: Best Practice for OGC — UML to JSON Encoding Rules
+
 * [[[RFC8259, RFC 8259]]], The JavaScript Object Notation (JSON) Data Interchange Format
+
+* [[[RFC6901, RFC 6901]]], JavaScript Object Notation (JSON) Pointer
