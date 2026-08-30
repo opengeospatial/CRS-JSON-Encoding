@@ -1,7 +1,9 @@
+[[conventions]]
 == Conventions
 
 This document uses the following symbols and abbreviations.
 
+[[symbols]]
 === Symbols
 
 |=====
@@ -11,6 +13,7 @@ This document uses the following symbols and abbreviations.
 |=====
 
 
+[[abbreviations]]
 === Abbreviated terms
 
 |=====
@@ -25,6 +28,7 @@ VRF   |Vertical Reference Frame
 |=====
 
 
+[[identifiers]]
 === Identifiers
 The normative provisions in this standard are denoted by the URI
 

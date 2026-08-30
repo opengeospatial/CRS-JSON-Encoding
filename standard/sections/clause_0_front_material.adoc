@@ -1,17 +1,6 @@
 .Preface
 
 ////
-NOTE: Commented because already generated in another section by Metanorma
-
-Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights.
-The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
-
-Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims
-or other intellectual property rights of which they may be aware that might be infringed by any implementation of the
-standard set forth in this document, and to provide supporting documentation.
-////
-
-////
 NOTE: Uncomment ISO section if necessary
 
 *ISO Declaration*
@@ -32,6 +21,7 @@ Attention is drawn to the possibility that some of the elements of this document
 ISO shall not be held responsible for identifying any or all such patent rights.
 ////
 
+[[abstract]]
 [abstract]
 == Abstract
 
@@ -40,6 +30,7 @@ and coordinate operations between coordinate reference systems.
 It does not prescribe how implementations should read or write these documents.
 This Standard follows the provisions of ISO 19111:2019 including its amendments 1 and 2.
 
+[[preface]]
 == Preface
 
 [NOTE]
@@ -47,10 +38,12 @@ This Standard follows the provisions of ISO 19111:2019 including its amendments 
 Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. >
 ====
 
+[[security]]
 == Security considerations
 
 No security considerations have been made for this Standard.
 
+[[submitters]]
 == Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
