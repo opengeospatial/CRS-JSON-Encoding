@@ -28,20 +28,34 @@ ISO shall not be held responsible for identifying any or all such patent rights.
 This Standard defines the structure and content of JSON documents describing coordinate reference systems (CRSs)
 and coordinate operations between coordinate reference systems.
 It does not prescribe how implementations should read or write these documents.
-This Standard follows the provisions of ISO 19111:2019 including its amendments 1 and 2.
+This Standard follows the abstract model of <<ISO19111>> including its amendments 1 and 2 (also available as OGC Topic 2)
+and the rules of <<OGC24-017>> for translating the model to a JSON encoding.
 
 [[preface]]
 == Preface
 
-[NOTE]
-====
-Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. >
-====
+During the June 2022 OGC Member Meeting in Madrid (Spain),
+the joint CRS DWG/SWG working groups approved a motion to work on the adoption of a JSON Schema for
+Coordinate references to be defined in parallel with the CRS WKT Standard and derived from ISO 19111 and OGC Topic 2.
+The group recognized the PROJ6 origins of the PROJJSON schema contribution being used as the starting point of this work.
+Meanwhile, OGC aimed to come to a standardized encoding from UML to JSON,
+in order to achieve technical interoperability in the chain from conceptual models to JSON implementation.
+For example, CRS JSON contains metadata objects whose encoding is specified by <<ISO19115-4>>.
+Following standardized rules help to keep a consistent encoding for all objects in a CRS JSON text.
+The rules have been published in 2026 as <<OGC24-017>> and provides guidance for modeling aspects
+needed by CRS JSON but having many possible JSON representations, such as:
+
+* by-reference encoding of property values,
+* JSON schema encoding for unions, and
+* JSON schema encoding for code lists.
 
 [[security]]
 == Security considerations
 
-No security considerations have been made for this Standard.
+A JSON text can be parsed by the `eval(…)` function of the JavaScript language.
+While a text compliant with this Standard does not contain executable code,
+a CRS definition compromised by an attacker could.
+JavaScript applications should parse CRS JSON texts with `JSON.parse(…)` or an equally safe function.
 
 [[submitters]]
 == Submitters
