@@ -164,3 +164,404 @@ NOTE: ‘Approximate’ is for users to define but typically is in the order of 
 
 [.source]
 <<ISO19111>>
+
+
+=== derived coordinate reference system
+
+coordinate reference system that is defined through the application of a specified coordinate conversion
+to the coordinates within a previously established coordinate reference system
+
+NOTE: The previously established coordinate reference system is referred to as the base coordinate reference system.
+
+NOTE: A derived coordinate reference system inherits its datum or reference frame from its base coordinate reference system.
+
+NOTE: The coordinate conversion between the base and derived coordinate reference system is implemented
+using the parameters and formula(s) specified in the definition of the coordinate conversion.
+
+[.source]
+<<ISO19111>>
+
+
+=== dynamic coordinate reference system
+
+coordinate reference system that has a dynamic reference frame
+
+NOTE: Coordinates of points on or near the crust of the Earth that are referenced to a dynamic
+coordinate reference system may change with time, usually due to crustal deformations such as tectonic
+motion and glacial isostatic adjustment.
+
+NOTE: Metadata for a dataset referenced to a dynamic coordinate reference system should include
+coordinate epoch information.
+
+[.source]
+<<ISO19111>>
+
+
+=== dynamic reference frame, dynamic datum
+
+reference frame in which the defining parameters include time evolution
+
+NOTE: The defining parameters that have time evolution are usually a coordinate sequence.
+
+[.source]
+<<ISO19111>>
+
+
+=== ellipsoid
+
+geometric reference surface embedded in 3D Euclidean space formed by an ellipse that is rotated about a main axis
+
+NOTE: For the Earth the ellipsoid is bi-axial with rotation about the polar axis.
+This results in an oblate ellipsoid with the midpoint of the foci located at the nominal centre of the Earth.
+
+[.source]
+<<ISO19111>>
+
+
+=== ellipsoidal coordinate system
+
+coordinate system in which position is specified by geodetic latitude, geodetic longitude
+and (in the three-dimensional case) ellipsoidal height
+
+[.source]
+<<ISO19111>>
+
+
+=== ellipsoidal height, geodetic height
+
+distance of a point from the reference ellipsoid along the perpendicular from the reference ellipsoid to
+this point, positive if upwards or outside of the reference ellipsoid
+
+NOTE: Only used as part of a three-dimensional ellipsoidal coordinate system or as part of a three-dimensional
+Cartesian coordinate system in a three-dimensional projected coordinate reference system, but never on its own.
+
+[.source]
+<<ISO19111>>
+
+
+=== engineering coordinate reference system
+
+coordinate reference system based on an engineering datum
+
+EXAMPLE: System for identifying relative positions within a few kilometres of the reference point,
+such as a building or construction site.
+
+EXAMPLE: Coordinate reference system local to a moving object such as a ship or an orbiting spacecraft.
+
+EXAMPLE: Internal coordinate reference system for an image.
+This has continuous axes. It may be the foundation for a grid.
+
+[.source]
+<<ISO19111>>
+
+
+=== engineering datum, local datum
+
+datum describing the relationship of a coordinate system to a local reference
+
+NOTE: Engineering datum excludes both geodetic and vertical reference frames.
+
+[.source]
+<<ISO19111>>
+
+
+=== epoch
+
+point in time
+
+NOTE: In this document an epoch is expressed in the Gregorian calendar as a decimal year.
+
+EXAMPLE: 2017-03-25 in the Gregorian calendar is epoch 2017,23.
+
+[.source]
+<<ISO19111>>
+
+
+=== flattening, _f_
+
+ratio of the difference between the semi-major axis (a) and semi-minor axis (b) of an ellipsoid to the semi-major axis: f = (a – b)/a
+
+NOTE: Sometimes inverse flattening 1/f = a/(a−b) is given instead; 1/f is also known as reciprocal flattening.
+
+[.source]
+<<ISO19111>>
+
+
+=== frame reference epoch
+
+epoch of coordinates that define a dynamic reference frame
+
+[.source]
+<<ISO19111>>
+
+
+=== geodetic coordinate reference system
+
+two- or three-dimensional coordinate reference system based on a geodetic datum and having either
+a three-dimensional Cartesian or an ellipsoidal or a spherical coordinate system
+
+NOTE: In this document a coordinate reference system based on a geodetic reference frame and having
+an ellipsoidal coordinate system is geographic.
+
+[.source]
+<<ISO19111>>
+
+
+=== geodetic latitude, ellipsoidal latitude
+
+angle from the equatorial plane to the perpendicular to the ellipsoid through a given point, northwards treated as positive
+
+[.source]
+<<ISO19111>>
+
+
+=== geodetic longitude, ellipsoidal longitude
+
+angle from the prime meridian plane to the meridian plane of a given point, eastward treated as positive
+
+[.source]
+<<ISO19111>>
+
+
+=== geodetic reference frame
+
+reference frame describing the relationship of a two- or three-dimensional coordinate system to the Earth
+
+NOTE: In the data model described in this document, the UML class `GeodeticReferenceFrame`
+includes both modern terrestrial reference frames and classical geodetic datums.
+
+[.source]
+<<ISO19111>>
+
+
+=== geographic coordinate reference system
+
+coordinate reference system that has a geodetic reference frame and an ellipsoidal coordinate system
+
+[.source]
+<<ISO19111>>
+
+
+=== linear coordinate system
+
+one-dimensional coordinate system in which a linear feature forms the axis
+
+[.source]
+<<ISO19111>>
+
+
+=== map projection
+
+coordinate conversion from an ellipsoidal coordinate system to a plane
+
+[.source]
+<<ISO19111>>
+
+
+=== parametric coordinate reference system
+
+coordinate reference system based on a parametric datum
+
+[.source]
+<<ISO19111>>
+
+
+=== parametric coordinate system
+
+one-dimensional coordinate system where the axis units are parameter values which are not inherently spatial
+
+[.source]
+<<ISO19111>>
+
+
+=== parametric datum
+
+datum describing the relationship of a parametric coordinate system to an object
+
+[.source]
+<<ISO19111>>
+
+
+=== point motion operation
+
+coordinate operation that changes coordinates within one coordinate reference system due to the motion of the point
+
+NOTE: The change of coordinates is from those at an initial epoch to those at another epoch.
+
+NOTE: In this document the point motion is due to tectonic motion or crustal deformation.
+
+[.source]
+<<ISO19111>>
+
+
+=== polar coordinate system
+
+two-dimensional coordinate system in Euclidean space in which position is specified
+by one distance coordinate and one angular coordinate
+
+NOTE: For the three-dimensional case, see spherical coordinate system.
+
+[.source]
+<<ISO19111>>
+
+
+=== prime meridian
+
+meridian from which the longitudes of other meridians are quantified
+
+[.source]
+<<ISO19111>>
+
+
+=== projected coordinate reference system
+
+coordinate reference system derived from a geographic coordinate reference system by applying a map projection
+
+NOTE: May be two- or three-dimensional, the dimension being equal to that of the geographic coordinate reference system from which it is derived.
+
+NOTE: In the three-dimensional case the horizontal coordinates (geodetic latitude and geodetic
+longitude coordinates) are projected to northing and easting and the ellipsoidal height is unchanged.
+
+[.source]
+<<ISO19111>>
+
+
+=== semi-major axis, _a_
+
+semi-diameter of the longest axis of an ellipsoid
+
+[.source]
+<<ISO19111>>
+
+
+=== semi-minor axis, _b_
+
+semi-diameter of the shortest axis of an ellipsoid
+
+[.source]
+<<ISO19111>>
+
+
+=== spatio-parametric coordinate reference system
+
+compound coordinate reference system in which one constituent coordinate reference system is a
+spatial coordinate reference system and one is a parametric coordinate reference system
+
+NOTE: Normally the spatial component is “horizontal” and the parametric component is “vertical”.
+
+[.source]
+<<ISO19111>>
+
+
+=== spatio-parametric-temporal coordinate reference system
+compound coordinate reference system comprised of spatial, parametric and temporal coordinate reference systems
+
+[.source]
+<<ISO19111>>
+
+
+=== spatio-temporal coordinate reference system
+
+compound coordinate reference system in which one constituent coordinate reference system
+is a spatial coordinate reference system and one is a temporal coordinate reference system
+
+[.source]
+<<ISO19111>>
+
+
+=== spherical coordinate system
+
+two- or three-dimensional coordinate system in Euclidean space in which position is specified
+by two angular coordinates and (in the three-dimensional case) by one distance coordinate
+
+NOTE: Not to be confused with an ellipsoidal coordinate system based on an ellipsoid ‘degenerated’ into a sphere.
+
+[.source]
+<<ISO19111>>
+
+
+=== spheroid
+
+closed surface that differs only slightly from that of a sphere
+
+[.source]
+<<ISO19111>>
+
+
+=== static coordinate reference system
+
+coordinate reference system that has a static reference frame
+
+NOTE: Coordinates of points on or near the crust of the Earth that are referenced
+to a static coordinate reference system do not change with time.
+
+NOTE: Metadata for a dataset referenced to a static coordinate reference system does not require coordinate epoch information.
+
+[.source]
+<<ISO19111>>
+
+
+=== static reference frame, static datum
+
+reference frame in which the defining parameters exclude time evolution
+
+[.source]
+<<ISO19111>>
+
+
+=== temporal coordinate reference system
+
+coordinate reference system based on a temporal datum
+
+[.source]
+<<ISO19111>>
+
+
+=== temporal coordinate system
+
+one-dimensional coordinate system where the axis is time
+
+[.source]
+<<ISO19111>>
+
+
+=== temporal datum
+
+datum describing the relationship of a temporal coordinate system to an object
+
+[.source]
+<<ISO19111>>
+
+
+=== vertical coordinate reference system
+
+one-dimensional coordinate reference system based on a vertical reference frame
+
+[.source]
+<<ISO19111>>
+
+
+=== vertical coordinate system
+
+one-dimensional coordinate system used for gravity-related height or depth measurements
+
+[.source]
+<<ISO19111>>
+
+
+=== vertical reference frame, vertical datum
+
+reference frame describing the relation of gravity-related heights or depths to the Earth
+
+NOTE: In most cases, the vertical reference frame will be related to mean sea level. Vertical datums
+include sounding datums (used for hydrographic purposes), in which case the heights may be negative heights or depths.
+
+NOTE: Ellipsoidal heights are related to a three-dimensional ellipsoidal coordinate system referenced to a geodetic reference frame.
+
+[.source]
+<<ISO19111>>
+
+
+=== white space
+
+sequence of one or more characters that have no glyphs
