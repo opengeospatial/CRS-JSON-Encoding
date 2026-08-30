@@ -1,10 +1,38 @@
 [obligation=informative]
-== Clauses not containing normative material
+== CRS JSON text form
 
-Paragraph
+The CRS JSON text is a representation of the definition of a CRS or coordinate operation.
+A text describes one CRS or coordinate operation object.
+The structure of all CRS JSON texts shall be compliant with <<RFC8259>>.
+Some name/value pairs (or members) are themselves other JSON objects,
+thus resulting in a nested structure.
+The character encoding is specified by <<RFC8259>>:
+it shall be UTF-8, unless the text is used in a closed ecosystem.
 
-=== Clauses not containing normative material sub-clause 1
+<<OGC24-017>> covers three categories of JSON encoding:
+plain JSON, GeoJSON compliant and JSON-FG compliant.
+This standard uses plain JSON encoding.
 
-Paragraph
+[[date]]
+=== Date and time
 
-=== Clauses not containing normative material sub-clause 2
+In this document calendar dates and times are restricted to the Gregorian calendar and the 24-hour clock as defined in ISO 8601-1.
+Only the ISO 8601-1 extended format (separators between date units and between sexagesimal time units) is permitted.
+Any precision is allowed. When time is included a UTC or local time zone designator is required.
+In ISO 8601-1 time zone designator may be omitted, in which case local time is assumed but unspecified.
+In this document a time zone designator is mandatory.
+
+Examples:
+
+|=====
+2014                      | (Precision = year)
+2014-01                   | (Calendar date, precision = month)
+2014-03-01                | (Calendar date, precision = day)
+2014-060                  | (Ordinal date, precision = day)
+2014-05-06T23Z            | (Calendar date, precision = hour, UTC)
+2014-157T23Z              | (Ordinal date, precision = hour, UTC)
+2014-07-12T16:00Z         | (Precision = minute, UTC)
+2014-07-12T17:00+01       | (Precision = minute, local time one hour ahead of UTC)
+2014-09-18T08:17:56-08    | (Precision = second, local time eight hours behind UTC)
+2014-11-23T00:34:56.789Z  | (Precision = 1/1000 second, UTC)
+|=====
