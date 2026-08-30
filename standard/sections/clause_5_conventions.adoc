@@ -1,6 +1,29 @@
 == Conventions
 
-This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+This document uses the following symbols and abbreviations.
+
+=== Symbols
+
+|=====
+| _ɸ_ |geodetic latitude
+| _ꟛ_ |geodetic longitude
+| _h_ |ellipsoidal height
+|=====
+
+
+=== Abbreviated terms
+
+|=====
+|CRS  |coordinate reference system
+|CS   |coordinate system
+|EPSG |EPSG Geodetic Parameter Dataset now maintained at https://epsg.org by the International Association of Oil and Gas Producers
+|IRM  |international reference meridian
+|OGC  |Open Geospatial Consortium, www.opengeospatial.org
+TRFT  |errestrial Reference Frame
+UTC   |Coordinated Universal Time
+VRF   |Vertical Reference Frame
+|=====
+
 
 === Identifiers
 The normative provisions in this standard are denoted by the URI
