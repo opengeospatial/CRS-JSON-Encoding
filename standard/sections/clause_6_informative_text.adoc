@@ -1,5 +1,6 @@
+[[encoding_rules]]
 [obligation=informative]
-== CRS JSON text form
+== UML to JSON encoding rules
 
 The CRS JSON text is a representation of the definition of a CRS or coordinate operation.
 A text describes one CRS or coordinate operation object.
@@ -21,18 +22,18 @@ Only the ISO 8601-1 extended format (separators between date units and between s
 Any precision is allowed. When time is included a UTC or local time zone designator is required.
 In ISO 8601-1 time zone designator may be omitted, in which case local time is assumed but unspecified.
 In this document a time zone designator is mandatory.
-
 Examples:
 
+.Date and time examples
 |=====
-2014                      | (Precision = year)
-2014-01                   | (Calendar date, precision = month)
-2014-03-01                | (Calendar date, precision = day)
-2014-060                  | (Ordinal date, precision = day)
-2014-05-06T23Z            | (Calendar date, precision = hour, UTC)
-2014-157T23Z              | (Ordinal date, precision = hour, UTC)
-2014-07-12T16:00Z         | (Precision = minute, UTC)
-2014-07-12T17:00+01       | (Precision = minute, local time one hour ahead of UTC)
-2014-09-18T08:17:56-08    | (Precision = second, local time eight hours behind UTC)
-2014-11-23T00:34:56.789Z  | (Precision = 1/1000 second, UTC)
+|2014                      | (Precision = year)
+|2014-01                   | (Calendar date, precision = month)
+|2014-03-01                | (Calendar date, precision = day)
+|2014-060                  | (Ordinal date, precision = day)
+|2014-05-06T23Z            | (Calendar date, precision = hour, UTC)
+|2014-157T23Z              | (Ordinal date, precision = hour, UTC)
+|2014-07-12T16:00Z         | (Precision = minute, UTC)
+|2014-07-12T17:00+01       | (Precision = minute, local time one hour ahead of UTC)
+|2014-09-18T08:17:56-08    | (Precision = second, local time eight hours behind UTC)
+|2014-11-23T00:34:56.789Z  | (Precision = 1/1000 second, UTC)
 |=====

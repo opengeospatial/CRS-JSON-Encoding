@@ -6,6 +6,7 @@ This document uses the following symbols and abbreviations.
 [[symbols]]
 === Symbols
 
+.Symbols
 |=====
 | _ɸ_ |geodetic latitude
 | _ꟛ_ |geodetic longitude
@@ -16,16 +17,24 @@ This document uses the following symbols and abbreviations.
 [[abbreviations]]
 === Abbreviated terms
 
-|=====
-|CRS  |coordinate reference system
-|CS   |coordinate system
-|EPSG |EPSG Geodetic Parameter Dataset now maintained at https://epsg.org by the International Association of Oil and Gas Producers
-|IRM  |international reference meridian
-|OGC  |Open Geospatial Consortium, www.opengeospatial.org
-TRFT  |errestrial Reference Frame
-UTC   |Coordinated Universal Time
-VRF   |Vertical Reference Frame
-|=====
+.Abbreviated terms
+|========
+|CRS     |Coordinate Reference System
+|CS      |Coordinate System
+|EPSG    |EPSG Geodetic Parameter Dataset now maintained at https://epsg.org by the International Association of Oil and Gas Producers
+|GML     |Geography Markup Language
+|IRM     |international Reference Meridian
+|ISO     |International Organization for Standardization
+|JSON    |JavaScript Object Notation
+|JSON-LD |JSON for Linked Data
+|OGC     |Open Geospatial Consortium, www.opengeospatial.org
+|TRF     |Terrestrial Reference Frame
+|UML     |Unified Modeling Language
+|URL     |Uniform Resource Locator
+|UTC     |Coordinated Universal Time
+|VRF     |Vertical Reference Frame
+|WKT     |Well Known Text
+|========
 
 
 [[identifiers]]
