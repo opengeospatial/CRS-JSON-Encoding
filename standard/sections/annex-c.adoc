@@ -1,0 +1,21 @@
+[[recommendations]]
+[appendix,obligation="informative"]
+== Mapping of concepts to CRS WKT and PROJJSON
+
+This section gives the WKT 2 keywords corresponding to the CRS JSON keywords.
+Because PROJJSON is derived from WKT 2, PROJJSON keyword are given together with the WKT keywords.
+The syntax in the CRS JSON and PROJJSON columns is as below:
+
+* `<Type>` for attributes defined as an object in the schema.
+* `<Parent type>/<attribute>` for attributes of type `string`, `integer` or `number`.
+
+.Mapping from CRS JSON types to CRS WKT keywords and PROJJSON types
+[width="90%",options="header"]
+|========================================================
+|CRS JSON              |CRS WKT        |PROJJSON
+|GeographicBoundingBox |BBOX           |bbox
+|Extent/description    |AREA           |object_usage/area
+|ObjectDomain          |USAGE          |object_usage
+|TemporalExtent        |VERTICALEXTENT |temporal_extent
+|VerticalExtent        |VERTICALEXTENT |vertical_extent
+|========================================================

@@ -2,6 +2,10 @@
 [bibliography]
 == Bibliography
 
+* [[[ISO19103,ISO 19103:2024]]], _Geographic information — Conceptual schema language_
+
+* [[[ISO19162,ISO 19162:2019]]], _Geographic information — Well-known text representation of coordinate reference systems_
+
 * [[[IOGP,EPSG]]], IOGP: _The EPSG Geodetic Parameter Dataset._ https://epsg.org/
 
 * [[[OGC07-092,OGC 07-092r1]]], Arliss Whiteside: OGC 07-092r1, _Definition identifier URNs in OGC namespace_ (2007)

@@ -1,5 +1,48 @@
+[[recommendations]]
 [appendix,obligation="informative"]
-== Title
+== Recommended practice for implementation
 
-[NOTE]
-Place other Annex material in sequential annexes beginning with "B" and leave final two annexes for the Revision History and Bibliography
+This document defines the structure and content of JSON texts.
+It does not specifically address the requirements for implementations that write or read these texts.
+Some recommendations for such implementations are given in this annex.
+
+
+[[whitespace]]
+=== White space within quoted text
+
+Parsers reading CRS JSON texts should ignore white space at the beginning or end of quoted values.
+Parsers may convert consecutive white space characters embedded within the quoted value into a single space.
+
+
+[[identifier_use]]
+=== Use of identifiers
+
+When an identifier is given for a coordinate reference system or coordinate operation,
+it applies to the whole object including all of its components.
+When an identifier is written into an object definition, all names, values and units for that object
+and its components which are given in the JSON text should be consistent with those given by the authority.
+In the event of conflict in values given in the CRS JSON text and given by an authority through an object's
+name or an identifier, reading software should throw an exception or give users a warning message.
+The JSON text values should be assumed to prevail.
+
+
+[[name_use]]
+=== Using names to interpret identity
+
+If comparing the content of two name strings, implementations should ignore whitespaces,
+case, the characters underscore "_", minus sign "-", solidus "/", left parenthesis "(" and
+right parenthesis ")".
+
+EXAMPLE: "Central_Meridian” should be considered equal to “central-meridian", “Central meridian"
+and "centralMeridian".
+
+
+[[sphere_flattening]]
+=== Defining parameters for a sphere
+
+The JSON representation of an ellipsoid requires the two defining parameters to be _a_ and 1/_f_.
+For a sphere the value of 1/_f_ is infinite.
+If the figure of the earth is a sphere it should have an artificial inverse flattening value of 0.
+Implementations should be prepared to read and handle this artificial value.
+
+#TODO replace by a requirement to use _b_ instead of _f_ for a sphere.#

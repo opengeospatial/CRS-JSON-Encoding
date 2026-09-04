@@ -41,6 +41,15 @@ This document uses the following symbols and abbreviations.
 === Identifiers
 The normative provisions in this standard are denoted by the URI
 
-`http://www.opengis.net/spec/{standard}/{m.n}`
+`http://www.opengis.net/spec/crsjson/1.0`
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
+
+
+[[schemaURLs]]
+=== JSON Schema URLs
+
+This document uses the following base URLs for relevant JSON Schema files:
+
+* UML2JSON: https://bp.schemas.opengis.net/24-017r1/uml2json/1.0
+* CRS JSON (defined by this specification): #TODO#
