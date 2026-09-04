@@ -1,13 +1,11 @@
-[[req_class_a]]
-
+[[req_usage]]
 [requirements_class]
 .Requirements Class 'A'
 ====
 [%metadata]
-identifier:: http://www.opengis.net/spec/ABCD/m.n/req/req-class-a
-subject:: Web API
-requirement:: /req/req-class-a/req-name-1
-requirement:: /req/req-class-a/req-name-2
+identifier:: http://www.opengis.net/spec/crsjson/1.0/req/core
+subject:: CRS JSON encoding
+requirement:: /req/core/json
+requirement:: /req/core/name
+requirement:: /req/core/usage
 ====
-
-

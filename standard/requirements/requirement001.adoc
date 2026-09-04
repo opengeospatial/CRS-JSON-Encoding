@@ -1,8 +1,8 @@
-[[req_class_a_name_1]]
-
+[[req_class_a_json]]
 [requirement]
 ====
 [%metadata]
-identifier:: /req/req-class-a/req-name-1
-part:: Requirement 'shall' statement
+identifier:: /req/core/json
+part:: The structure of all CRS JSON texts shall be compliant with <<RFC8259>>.
+part:: The character encoding as mandated by RFC 8259 shall be UTF-8, unless the text is used in a closed ecosystem.
 ====

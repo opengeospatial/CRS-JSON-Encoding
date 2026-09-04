@@ -1,9 +1,37 @@
-[[req_class_a_name_2]]
-
+[[req_class_name]
 [requirement]
 ====
 [%metadata]
-identifier:: /req/req-class-a/req-name-2
-part:: The server SHALL support process input values encoded as qualified values.
-part:: The value of the `value` key SHALL be an _object_ instance.
+identifier:: /req/core/name
+part:: Primary names (excluding aliases) shall be an object conform to the https://TODO/mdj.json#MD_Identifier[ISO 19115-4 MD_Identifier schema].
 ====
+
+The following fragment is equivalent to `MD_Identifier` schema:
+
+[source,json]
+----
+{
+  "$anchor": "MD_Identifier",
+  "type": "object",
+  "properties": {
+    "authority": {
+      "$ref": "#CI_Citation"
+    },
+    "code": {
+      "type": "string"
+    },
+    "codeSpace": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code"
+  ]
+}
+----

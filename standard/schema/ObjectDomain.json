@@ -1,0 +1,28 @@
+{
+  "$anchor": "ObjectDomain",
+  "description": "Scope and validity of a CRS-related object.",
+  "type": "object",
+  "properties": {
+    "scope": {
+      "description": "Description of usage, or limitations of usage, for which this object is valid. If unknown, should be \"not known\".",
+      "type": "string"
+    },
+    "domainOfValidity": {
+      "description": "Spatial and temporal extent in which this object is valid.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "$ref": "https://TODO/mdj.json#EX_Extent"
+        }
+      ]
+    }
+  },
+  "required": [
+    "scope",
+    "domainOfValidity"
+  ],
+  "additionalProperties": false
+}

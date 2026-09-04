@@ -1,38 +1,82 @@
-== Clause containing normative material
+[[text_form]]
+== CRS JSON text form
 
-Paragraph
-
-=== Requirement Class A or Requirement A Example
-
-Paragraph – intro text for the requirement class.
-
-Use the following table for Requirements Classes.
+The JSON representation of attributes that are common to coordinate reference systems and
+coordinate operations — name, scope, extent, identifier and remarks — is described in <<common>>.
+Coordinate system (a component of coordinate reference systems) is described in <<cs>>.
+Elements for a datum ensemble and a dynamic coordinate reference system are described <<datum>>.
+Attributes specific to coordinate reference systems and to coordinate operations are described in <<crs>>.
 
 include::../requirements/requirements_class.adoc[]
 
-==== Requirement 1
-
-Paragraph - intro text for the requirement.
-
-Use the following table for Requirements, number sequentially.
-
 include::../requirements/requirement001.adoc[]
 
-Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
-[width="90%",options="header"]
-|===
-|Names |Definition |Data types and values |Multiplicity and use
-|name 1 |definition of name 1 |float |One or more (mandatory)
-|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
-|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
-|===
+[[common]]
+=== Representation of common attributes
+
+Attributes that are common to coordinate reference systems and coordinate operations are
+name, scope, extent, identifier and remarks.
 
 
-==== Requirement 2
+[[name]]
+==== Name and alias
 
-Paragraph - intro text for the requirement.
+From a computational perspective name is redundant information provided for human readability.
+For example an ellipsoid is defined by the values of the semi-major axis and inverse flattening,
+and the ellipsoid name is redundant information.
+However the name may be used to verify the defining values against those from an authoritative source.
+Comment on the comparison of text strings is given in <<name_use>>.
 
-Use the following table for Requirements, number sequentially.
+NOTE:: Name is a required attribute for the CRS object as well as for some component objects.
+Depending upon the convention adopted for CRS naming, this can result in duplication of name within the CRS JSON string.
 
 include::../requirements/requirement002.adoc[]
+
+#TODO alias#
+
+
+[[object_domain]]
+==== Object domain (scope and extent)
+
+`ObjectDomain` is an optional object which if included in a JSON text shall include both a scope and an extent.
+Multiple pairs of scope/extent may be used to describe the usage for different purposes over different extents.
+The `scope` and `domainOfValidity` (extent) members may not be given alone but only as a pairing.
+Within each pairing, the extent may consist of one or more of area textual description,
+area bounding box, vertical extent and/or temporal extent.
+
+Scope describes the purpose or purposes for which a CRS, datum, datum ensemble or coordinate operation is applied.
+Extent describes the spatial and/or temporal applicability of a CRS, datum, datum ensemble or coordinate operation.
+Extent in this document uses the encoding described in <<ISO19115-4>>.
+It allows for horizontal, vertical and temporal extents.
+These extent attributes are all optional, although at least one shall be included in any `ObjectDomain`.
+See <<extent>> for more information.
+
+include::../requirements/requirement003.adoc[]
+
+Example:
+
+.Scope example
+[source,json]
+----
+"domain": [
+  {
+    "scope": "Large scale topographic mapping and cadastre.",
+    "domainOfValidity": {
+      "description": "Netherlands mainland."
+    }
+  }
+]
+----
+
+
+[[cs]]
+=== Representation of coordinate systems
+
+
+[[datum]]
+=== Representation of datum
+
+
+[[crs]]
+=== Representation of coordinate reference systems
