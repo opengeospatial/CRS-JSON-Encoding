@@ -1,0 +1,4 @@
+This folder contains the CRS JSON schema separated in one fragment (class) par file.
+The "$ref" keyword is used as if all fragments were inlined inside `referencing.json`.
+Therefore, individual fragments may not be valid but the complete file should be valid.
+The media-type of the compete file should be "application/schema+json".

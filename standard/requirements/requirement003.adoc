@@ -1,0 +1,17 @@
+[[req_class_usage]]
+[requirement]
+====
+[%metadata]
+identifier:: /req/core/usage
+part::
++
+--
+Object domain shall be an object conform to the following schema:
+
+[source,json]
+----
+include::../schema/ObjectDomain.json[]
+----
+--
+part:: The extent object shall have at least one horizontal, vertical, temporal or description value.
+====
