@@ -1,8 +1,8 @@
 {
-  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/ - and edited manually",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://schemas.isotc211.org/19111/-/3.2.0/iso19111.json",
-  "description": "Replaces 19111 Edition 2 and 19111-2 Edition 1",
+  "description": "JSON representation of Coordinate Reference Systems and Coordinate Operations",
   "$defs": {
     "AffineCS": {
       "$anchor": "AffineCS",
