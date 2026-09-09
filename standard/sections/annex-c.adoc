@@ -1,4 +1,4 @@
-[[recommendations]]
+[[concepts-mapping]]
 [appendix,obligation="informative"]
 == Mapping of concepts to CRS WKT and PROJJSON
 
